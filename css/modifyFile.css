@@ -1,0 +1,96 @@
+.navbar-expand-lg .navbar-collapse,.info
+{
+    direction: rtl;
+}
+.portfolio-main{
+	padding: 30px 0px;
+}
+.portfolio-main h2{
+	font-weight: 600;
+	font-size: 45px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.project-menu {
+    margin-bottom: 30px;
+}
+.portfolio-main .card {
+	border: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.portfolio-main .card .card-body .card-title{
+	margin-bottom: 0px;
+}
+.portfolio-main .card .card-body .card-title a{
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #ffffff;
+	margin: 0;
+}
+.portfolio-main .card .card-body{
+	position: absolute;
+	background: #323232;
+	padding: 0px 20px;
+	height: 40px;
+	transform: scale(0);
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	display: flex;
+	align-items: center;
+	vertical-align: center;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.portfolio-main .card:hover .card-body{
+	transform: scale(1);
+	top: 80%;
+}
+.card-img{
+	overflow: hidden;
+	position: relative;
+}
+.portfolio-item .card:hover .card-img .card-img-top{
+	transform: scale3D(1.2, 1.2, 2);
+	opacity: .5;
+}
+.card-img-top{
+	transition: all 500ms linear 0s;
+}
+.overlay{
+	background: rgba(18,115,235,0.5);
+	position: absolute;
+	bottom: -100%;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.3s;
+}
+.overlay i{
+	font-size: 35px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #ffffff;
+}
+.portfolio-main .card:hover .overlay{
+	bottom: 0px;
+}
+.portfolio-item {
+    margin-bottom: 30px;
+}
+.project-menu button {
+    margin-bottom: 5px;
+    border-radius: 0.25rem
+}
